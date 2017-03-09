@@ -1,0 +1,11 @@
+sudo: required
+services: docker
+language: node_js
+
+before_script:
+    - curl -O https://raw.githubusercontent.com/cyber-dojo/home/master/shared/push_and_trigger.sh
+    - chmod +x push_and_trigger.sh
+
+script:
+    - ./build.sh \
+        && ./push_and_trigger.sh 
