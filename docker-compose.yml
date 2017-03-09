@@ -1,0 +1,11 @@
+
+version: '2'
+
+services:
+  grafana:
+    image: cyberdojo/grafana
+    build:
+      context: .
+    container_name: cyber-dojo-grafana
+    ports:
+        - '3000:3000'
