@@ -1,6 +1,9 @@
 
-To load this into grafana
+To load this into grafana...
 o) go to http://cyber-dojo.org:3000
+o) login: user=admin, password=(as set in server's grafana.env)
+
+If there is no existing dashboard...
 o) click the drop-down on the top-left
 o) hover over the [Dashboard] entry
 o) click the [Import] sub-menu entry
