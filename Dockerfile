@@ -1,5 +1,5 @@
-FROM grafana/grafana
-MAINTAINER Jon Jagger <jon@jaggersoft.com>
+FROM  grafana/grafana:latest
+LABEL maintainer=jon@jaggersoft.com
 
 COPY grafana.ini /etc/grafana/
 COPY dashboards/*.json /grafana/dashboards/
