@@ -6,6 +6,8 @@ services:
     image: cyberdojo/grafana
     build:
       context: .
+      args:
+        - SHA
     container_name: cyber-dojo-grafana
     ports:
-        - '3000:3000'
+        - 3000:3000
