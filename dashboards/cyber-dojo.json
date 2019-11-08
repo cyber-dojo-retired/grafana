@@ -16,7 +16,7 @@
   "gnetId": null,
   "graphTooltip": 0,
   "id": 2,
-  "iteration": 1573045692443,
+  "iteration": 1573045692447,
   "links": [],
   "panels": [
     {
@@ -30,6 +30,90 @@
         "w": 23,
         "x": 0,
         "y": 0
+      },
+      "id": 14,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": false,
+        "total": false,
+        "values": false
+      },
+      "lines": true,
+      "linewidth": 1,
+      "links": [],
+      "nullPointMode": "null",
+      "options": {},
+      "percentage": false,
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "expr": "sum (rate(http_server_requests_total{path=\"/batch\"}[5m]))",
+          "format": "time_series",
+          "intervalFactor": 1,
+          "refId": "A"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "saver",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "fill": 1,
+      "gridPos": {
+        "h": 5,
+        "w": 23,
+        "x": 0,
+        "y": 5
       },
       "id": 2,
       "legend": {
@@ -116,7 +200,7 @@
         "h": 5,
         "w": 23,
         "x": 0,
-        "y": 5
+        "y": 10
       },
       "id": 4,
       "legend": {
@@ -203,7 +287,7 @@
         "h": 5,
         "w": 23,
         "x": 0,
-        "y": 10
+        "y": 15
       },
       "id": 8,
       "legend": {
@@ -288,7 +372,7 @@
         "h": 5,
         "w": 23,
         "x": 0,
-        "y": 15
+        "y": 20
       },
       "id": 12,
       "legend": {
@@ -373,7 +457,7 @@
         "h": 6,
         "w": 23,
         "x": 0,
-        "y": 20
+        "y": 25
       },
       "id": 10,
       "legend": {
@@ -454,7 +538,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 26
+        "y": 31
       },
       "id": 6,
       "panels": [],
